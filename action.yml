@@ -1,0 +1,6 @@
+# action.yml
+name: 'Golang release action'
+description: 'Build golang code for various architectures and upload to github release page'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
