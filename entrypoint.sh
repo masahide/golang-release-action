@@ -6,6 +6,9 @@ WORKDIR="/go/src/github.com/${GITHUB_REPOSITORY}"
 
 mkdir -p "$(dirname "${WORKDIR}")"
 ln -s "${GITHUB_WORKSPACE}" "${WORKDIR}"
+if [[ -n ${BUILDDIR} ]]; then 
+    cd ${BUILDDIR}
+fi
 go get -v ./...
 go build
 
