@@ -43,3 +43,17 @@ jobs:
         GOARCH: amd64
         GOOS: windows
 ```
+
+env params
+------------
+
+```
+$GITHUB_TOKEN       - secrets.GITHUB_TOKEN
+
+$GOOS and $GOARCH   - The name of the target operating system and compilation architecture. 
+                      https://golang.org/doc/install/source#environment
+
+$BUILD_DIR          - `go build` execution directory (default: repository root)
+
+$BIN_NAME           - Build target filename
+```
