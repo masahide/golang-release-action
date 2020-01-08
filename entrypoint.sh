@@ -15,7 +15,7 @@ go build
 UPLOAD_URL="$(jq -r .release.upload_url "$GITHUB_EVENT_PATH")"
 UPLOAD_URL="${UPLOAD_URL/\{?name,label\}/}"
 TAG="$(jq -r .release.tag_name "$GITHUB_EVENT_PATH")"
-if [[ -n ${BIN_NAME} ]]; then
+if [[ -z ${BIN_NAME} ]]; then
     BIN_NAME="$(basename "$GITHUB_REPOSITORY")"
 fi
 SUFFIX="${BIN_NAME}_${TAG}_${GOOS}_${GOARCH}"
