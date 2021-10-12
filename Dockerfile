@@ -1,4 +1,4 @@
-FROM golang:1.13
+FROM golang:1.17
 
 LABEL name="Golang Release Action"
 LABEL maintainer="YAMASAKI Masahide"
