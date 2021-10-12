@@ -2,7 +2,7 @@ FROM golang:1.17
 
 LABEL name="Golang Release Action"
 LABEL maintainer="YAMASAKI Masahide"
-LABEL version="0.1.0"
+LABEL version="1.17.2"
 LABEL repository="https://github.com/masahide/golang-release-action"
 
 LABEL com.github.actions.name="Golang Release Action"
